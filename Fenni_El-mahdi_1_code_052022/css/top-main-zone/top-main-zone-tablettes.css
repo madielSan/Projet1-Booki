@@ -1,0 +1,25 @@
+@media (max-width: 991px) 
+{
+	.filtersZone
+	{
+		flex-wrap: wrap;
+	}
+
+
+	.filterButton
+	{
+		flex-wrap: wrap;
+		margin: 0 15px 10px 0;
+	}
+
+	.filtersZone
+	{
+		flex-wrap: wrap;
+	}
+
+	.motFiltres
+	{
+		width: 100%;
+	}
+	
+}

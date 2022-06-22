@@ -1,0 +1,70 @@
+@media(max-width: 767px) /*FORMAT PHONES*/
+{
+
+	.descriptionSite
+	{
+		display: flex;
+		flex-wrap: wrap;
+		margin-left: 10px;
+	}
+
+	.titleSiteDescription
+	{
+		margin:0;
+		font-size: 23px;
+		
+	}
+
+	.descriptionSite
+	{
+		margin: 10px 0;
+		font-size: 15px;
+	}
+
+
+	.rechercherVille
+	{
+		min-width: 210px;
+		padding-right: 0;
+		border-right: none;
+	}
+	.boutonRecherche
+	{
+		width: 51px;
+		border-radius: 20px;
+		position: relative;
+		right: 30px;	
+	}
+
+	.iconLoupe
+	{
+		display: block;
+	}
+
+	.rechercher
+	{
+		display: none;
+	}
+
+	.filtersZone
+	{
+		flex-wrap: wrap;
+	}
+
+	.filtersZone p
+	{
+		width: 100%;
+	}
+
+
+	.filterButton
+	{
+		flex-wrap: wrap;
+		margin: 0 15px 10px 0;
+		padding-right: 10px;
+		font-size: 15px;
+		min-width: 140px;
+		height: auto;
+	}
+
+}

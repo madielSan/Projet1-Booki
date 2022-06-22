@@ -1,0 +1,142 @@
+/*-------------------------------------------MEDIA QUERIES: FORMAT TABLETTES -------------------------------------------*/
+
+
+@media (max-width: 991px)
+{
+	.middle-main-zone
+	{
+		flex-flow: column;
+	}
+
+	.sectionAside
+	{
+		flex-flow: row wrap;
+		border-radius: 0;
+		margin-left: 0;
+		box-sizing: border-box;
+		width: 100%;
+		padding-right: 60px;
+		margin-bottom: 40px;
+		order: 1;
+	}
+
+	#starTitleAside
+	{
+		margin-right: 0;
+	}
+
+	.cardsZoneAside
+	{
+		flex-flow: row;
+		width: 100%;
+	}
+
+	.cardPopulaire
+	{
+		min-width: 30%;
+	}
+
+	.titleCardPop
+	{
+		font-size: 14px;
+	}
+
+	.prixNuitPop
+	{
+		font-size: 11px;
+	}
+
+	.titleAside
+	{
+		width: auto;
+	}
+
+	.sectionHebergement
+	{
+		order: 2;
+	}
+
+
+
+	/*----MEDIA QUERIES: IMAGES FORMAT MEDIUM----*/
+
+
+	/* IMAGES CARDS HEBERGEMENT */
+	.imgHeb
+	{
+		background-repeat: no-repeat; 
+		background-position: center;
+		height: 125px;
+		width: auto;
+		border-radius:15px 15px 0 0;
+	}
+
+	#imgHeb1
+	{
+		background-image: url("../../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgHeb2
+	{
+		background-image: url("../../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgHeb3
+	{
+		background-image: url("../../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgHeb4
+	{
+		background-image: url("../../images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgHeb5
+	{
+		background-image: url("../../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgHeb6
+	{
+		background-image: url("../../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+		background-size: cover;
+	}
+
+	/* IMAGES CARDS POPULAIRES */
+
+
+	.imgPop
+	{
+		width: auto;
+		min-height: 160px;
+		margin-right: 5px;
+	}
+
+	#imgPop1
+	{
+		background-image: url("../../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+		background-size:cover;
+	}
+
+	#imgPop2
+	{
+		background-image: url("../../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg");
+		background-size: cover; 
+	}
+
+	#imgPop3
+	{
+		background-image: url("../../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg");	
+		background-size: cover;
+	}
+
+
+}
+
+
+/*---------------------------------

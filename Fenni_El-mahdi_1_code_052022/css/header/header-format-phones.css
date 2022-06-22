@@ -1,0 +1,56 @@
+/*---------------------------MEDIA QUERIES:  HEADER FORMAT PHONES---------------------*/
+@media(max-width: 767px) 
+{
+
+	header
+	{
+		flex-direction: column;
+	}
+
+	.logoImageContain
+	{
+		display: flex;
+		justify-content: space-around;
+		margin: 0;
+	}
+
+	#logo
+	{
+		width: auto;
+	}
+
+	#menu
+	{
+		display: flex;
+		justify-content: center;
+		margin-top: 20px;
+		margin-right: 0;
+	}
+
+
+	.navLink
+	{
+		margin-right: 0;
+		margin-bottom: 20px;
+		font-size: 14px;
+	}
+
+	#linkActivite
+	{
+		padding: 0 50px 10px;
+	}
+
+	#linkHebergement, #linkActivite
+	{
+		padding: 0 50px 10px 50px;
+		border-bottom: 3px #f2f2f2 solid;
+
+	}
+
+	#linkHebergement:hover, #linkActivite:hover
+	{
+		border-top: 0;
+		border-bottom: 3px #0065FC solid;
+	}
+
+}

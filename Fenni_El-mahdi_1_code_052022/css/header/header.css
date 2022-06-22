@@ -1,0 +1,50 @@
+header
+{
+	display: flex;
+}
+
+.logoImageContain
+{
+	margin: 30px 20px 15px 40px;
+	flex: 3;
+}
+
+#logo
+{
+	height: 50px;
+	width: auto;	
+}
+
+#menu
+{
+	margin: 30px 20px 0 0;
+	flex: 1;
+}
+
+
+.navigation
+{	
+	display: flex;
+	padding: 0;
+}
+
+.navLink
+{
+	margin-right: 10px;
+	font-size: 16px;
+	list-style-type: none;
+}
+
+#linkHebergement, #linkActivite
+{
+	text-decoration: none;
+	padding: 43px 30px 0 30px;
+	margin-top: 10px;
+	color: #000000;
+}
+
+#linkHebergement:hover, #linkActivite:hover
+{
+	color:#0065FC;
+	border-top: 2px #0065FC solid;
+}

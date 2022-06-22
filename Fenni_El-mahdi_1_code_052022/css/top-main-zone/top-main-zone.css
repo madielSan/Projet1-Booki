@@ -1,0 +1,165 @@
+.topMainZone
+{
+	width: 95%;
+	margin: auto;
+}
+
+.descriptionSite
+{
+	margin-top: 8px;
+}
+
+
+.titleSiteDescription
+{
+	font-weight: 700;
+	font-size: 22px;
+	margin-bottom: 0;
+
+}
+
+.formRecherche
+{
+	display: flex;
+	align-items: center;
+}
+
+.rechercherVille
+{
+	height: 51px;
+	width: 230px;
+	border: 1px #f2f2f2 solid;
+	padding: 0 10px 0 10px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+ /* Lors du clique sur le champs du formulaire, une bordure apparaît. Cette rêgle CSS permet de la supprimer */
+.rechercherVille:focus 
+{
+	outline: none;
+}
+
+.boutonRecherche
+{
+	height: 51px;
+	width: 130px;
+	background-color: #0065FC;
+	color: white;
+	border: 1px #0065FC solid;
+	border-radius: 0 18px 18px 0;
+	font-size: 17px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.boutonRecherche:hover
+{
+	box-shadow: 1px 1px 3px #0065FC ;
+}
+
+.iconLoupe /*apparaît au format phone à la place de "rechercher"*/
+{
+	display: none ;
+}
+
+.location
+{
+	height: 52px;
+	width: 54px;
+	border: 1px #f2f2f2 solid;
+	background-color: #f2f2f2 ;
+	border-radius: 18px 0 0 18px;
+	font-size: 18px;
+	cursor: pointer;
+}
+
+
+/* ---------------------------------------- Zone Filtres ------------------------------------------ */
+
+.filtersZone
+{
+	display: flex;
+	align-items: center;
+}
+
+.motFiltres
+ {
+ 	margin-top: 24px;
+ 	font-size: 18px;
+ 	font-weight: 700;
+ }
+
+.filterButton
+{
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	font-weight: 700;
+	height: 53px;
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 30px 15px 20px 20px;
+	border: 2px lightgray solid;
+	border-left: none;
+	border-radius: 30px;
+	padding: 0;
+	padding-right: 15px;
+	cursor: pointer;
+	transition: background-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out, color 0.5s ease-in-out, border 0.5s ease-in-out; 
+}
+
+.filterButton:hover
+{
+	background-color: #DEEBFF;
+	box-shadow: 4px 4px 8px lightgray;
+	border: #DEEBFF;
+}
+
+.filterButton:focus
+{
+	background-color: #DEEBFF;
+	box-shadow: 2px 2px 4px lightgray;
+	color: #0065FC;
+	border: #DEEBFF;
+}
+
+
+.iconFilter
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	height: 53px;
+	min-width: 53px;
+	margin-right: 10px;
+	border-radius: 30px;
+	background-color:#DEEBFF;
+	color:#0065FC;
+
+}
+
+/*----------------------------------Zone Info------------------------------------------------------ */
+
+.zoneInfo
+{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.infoIcon
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 20px;
+	height: 20px;
+	color: #0065FC;
+	border: 1px solid lightgray;
+	border-radius: 20px;
+	margin-right: 10px;
+
+}
+

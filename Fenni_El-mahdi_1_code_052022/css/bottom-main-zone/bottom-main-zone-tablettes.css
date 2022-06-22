@@ -1,0 +1,99 @@
+/*-----------------------------MEDIA QUERIES:  VERSION TABLETTES-----------------------------------------------*/
+
+@media (max-width: 991px)
+{
+	.activitesCardsZone
+	{
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		justify-content: flex-start;
+	}
+
+	.smallCardZone
+	{
+
+		min-width: 55%;
+		max-height: 200px;
+		min-height: 200px;
+		height: 180px;
+		flex-flow: row;
+	}
+
+	.bigCardActivites
+	{
+		margin-right: 40px;
+		min-width: 30%;
+		max-height: 200px;
+		min-height: 200px;
+		
+	}
+
+	.bigCardActivites:first-child
+	{
+		margin-bottom: 40px;
+	}
+
+	.smallCardActivites
+	{
+		min-width: 50%;
+		margin-bottom: 40px;
+	}
+
+	.smallCardActivites:first-child
+	{
+		margin-right: 40px;
+	}
+
+	.titleActivite
+	{
+		box-sizing: border-box;
+	}
+
+
+	.bigCard
+	{
+		height: 180px;
+	}
+
+	/* IMAGES ACTIVITES FORMAT TABLETTES */
+
+	#imgActivite1
+	{
+		background-image: url("../../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgActivite2
+	{
+		background-image: url("../../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+		background-size: cover;
+
+	}
+	#imgActivite3
+	{
+		background-image: url("../../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+		background-size: cover;
+
+	}
+
+	#imgActivite4
+	{
+		background-image: url("../../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgActivite5
+	{
+		background-image: url("../../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+		background-size: cover;
+	}
+
+	#imgActivite6
+	{
+		background-image: url("../../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+		background-size: cover;
+
+	}
+
+
+}

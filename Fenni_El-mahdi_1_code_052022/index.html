@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title> Booki | Trouvez votre hébergement pour des vacances de rêve </title>
+			<!-- INTEGRATION DU CDN FONT AWESOME  -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">	
+		<!-- INTEGRATION DE LA POLICE "RALEWAY" -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+		<!-- FICHIERS GENERAUX STYLE CSS DU SITE -->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"><!--fichier qui permet de normaliser le contenu du site afin d'éviter certains bugs commun d'affichage sur les navigateurs -->
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- FICHIERS STYLE CSS DECOUPAGE DU SITE EN PLUSIEURS ZONES + FICHIER FORMATS RESPONSIVES (MEDIA QUERIES: BREAKPOINTS -> PHONES: 768px TABLETTES: 992px)-->
+		<link rel="stylesheet" type="text/css" href="css/header/header.css">
+		<link rel="stylesheet" type="text/css" href="css/header/header-format-phones.css">
+		<link rel="stylesheet" type="text/css" href="css/top-main-zone/top-main-zone.css">
+		<link rel="stylesheet" type="text/css" href="css/top-main-zone/top-main-zone-tablettes.css">
+		<link rel="stylesheet" type="text/css" href="css/top-main-zone/top-main-zone-phones.css">
+		<link rel="stylesheet" type="text/css" href="css/middle-main-zone/middle-main-zone.css">
+		<link rel="stylesheet" type="text/css" href="css/middle-main-zone/middle-main-zone-tablettes.css">
+		<link rel="stylesheet" type="text/css" href="css/middle-main-zone/middle-main-zone-phones.css">
+		<link rel="stylesheet" type="text/css" href="css/bottom-main-zone/bottom-main-zone.css">
+		<link rel="stylesheet" type="text/css" href="css/bottom-main-zone/bottom-main-zone-tablettes.css">
+		<link rel="stylesheet" type="text/css" href="css/bottom-main-zone/bottom-main-zone-phones.css">
+		<link rel="stylesheet" type="text/css" href="css/footer/footer.css">
+		<link rel="stylesheet" type="text/css" href="css/footer/footer-phones.css">
+	</head>
+	<body>
+		<header>
+			<!-- LOGO BOOKI -->
+			<div class="logoImageContain">
+				<img src="images/logo/Booki.png" alt="logoBooki" id="logo">
+			</div>
+			<!-- Barre de navigation, menu du site -->
+			<nav id="menu"> 
+				<ul class="navigation">
+			        <li class="navLink"><a href="#middle-main-zone" id="linkHebergement">Hébergements</a></li>
+			        <li class="navLink"><a href="#bottomMainZone" id="linkActivite">Activités</a></li>
+			    </ul>
+			</nav>
+		</header>
+		<!-- CONTENU PRINCIPAL DU SITE-->
+		<main> 
+			<div class="topMainZone"> <!--ZONE TOP DU CONTENU PRINCIPAL (topMainZone)-->
+				<div class="descriptionSite"> <!-- ZONE DE DESCRIPTION DU SITE -->
+					<h1 class="titleSiteDescription">Trouvez votre hébergement pour des vacances de rêve </h1>
+					<p class="descriptionSite">En plein centre-ville ou en pleine nature</p>
+				</div> <!-- FIN DE DESCRIPTION -->
+				<form method="POST" class="formRecherche"><!-- FORMULAIRE RECHERCHE PAR VILLE (méthode POST ajoutée afin que le dev back-end puisse traiter le formulaire en base de données) -->
+					<button class="location"><i class="fa-solid fa-location-dot"></i></button>
+			        <input type="search" name="rechercherVille" class="rechercherVille" placeholder="Saisissez la ville...">
+			        <button class="boutonRecherche">
+			        	<span class="rechercher">Rechercher</span> 
+			        	<span class="iconLoupe"><i class="fa-solid fa-magnifying-glass"></i></span>
+			        </button>
+				</form> <!-- FIN FORMULAIRE -->
+				<div class="filtersZone"> <!-- ZONE DES BOUTONS FILTRES -->
+					<p class="motFiltres">Filtres</p>
+					<div class="filter">
+						<button name="filterEconomique" class="filterButton"> 
+							<span class="iconFilter"><i class="fa-solid fa-money-bill-wave"></i></span>
+							 Économique 
+						</button>
+					</div>
+					<div class="filter">
+						<button name="filterFamilial" class="filterButton">
+							<span class="iconFilter"><i class="fa-solid fa-child-reaching"></i></span>
+							Familial
+						</button>
+					</div>
+					<div class="filter">
+						<button name="filterRomantique" class="filterButton"> 
+							<span class="iconFilter"><i class="fa-solid fa-heart"></i></span>
+							 Romantique
+						</button>
+					</div>
+					<div class="filter">
+						<button name="filterAnimaux" class="filterButton"> 
+							<span class="iconFilter"><i class="fa-solid fa-dog"></i></span>
+							 Animaux autorisés
+						</button>
+					</div>					
+				</div> <!-- FIN ZONE BOUTONS FILTRES -->
+				<div class="zoneInfo">
+				 	<div class="infoIcon">&#x2139;</div>
+				 	<p>Plus de 500 logements sont disponibles dans cette ville </p>
+				</div>
+			</div> <!--FIN TOP MAIN ZONE-->
+			<!-- Zone Centrale du site [cartes Hebergements et Hébergements populaires(aside)]-->
+			<div class="middle-main-zone" id="middle-main-zone"> 
+				<section class="sectionHebergement"> <!-- Zone cartes Hébergements selon la ville rechercher -->
+					<h2 class="titleHebergement">Hébergements à Marseille</h2>
+					<div class="cardsZone">
+						<article class="cardHebergements" id="cardHebergement1">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb1"></div>
+								<h2 class="cardHebergementsTitle">Auberge La Cannebière</h2>
+								<p class="prixNuitHeb">Nuit à partir de 25 &euro;</p>
+								<div class="etoileHeb">
+									<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i>
+								</div>
+							</a>
+						</article>
+						<article class="cardHebergements" id="cardHebergement2">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb2"></div>
+								 <h2 class="cardHebergementsTitle">Hôtel du port</h2>
+								 <p class="prixNuitHeb">Nuit à partir de 52 &euro;</p>
+								 <div class="etoileHeb">
+								 	<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i>
+								 </div>
+							</a>
+						</article>
+						<article class="cardHebergements" id="cardHebergement3">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb3"></div>
+								<h2 class="cardHebergementsTitle">Hôtel Les mouettes</h2>
+								<p class="prixNuitHeb">Nuit à partir de 76 &euro;</p>
+								<div class="etoileHeb">
+									<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i>
+								</div>
+							</a>
+						</article>
+						<article class="cardHebergements" id="cardHebergement4">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb4"></div>
+								<h2 class="cardHebergementsTitle">Hôtel de la mer</h2>
+								<p class="prixNuitHeb">Nuit à partir de 46 &euro;</p>
+								<div class="etoileHeb">
+									<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i><i class="fa-solid fa-star lightgray"></i>
+								</div>
+							</a>
+						</article>
+						<article class="cardHebergements" id="cardHebergement5">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb5"></div>
+								<h2 class="cardHebergementsTitle">Auberge Le Panier</h2>
+								<p class="prixNuitHeb">Nuit à partir de 23 &euro;</p>
+								<div class="etoileHeb">
+									<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i>
+								</div>
+							</a>
+						</article>
+						<article class="cardHebergements" id="cardHebergement6">
+							<a href="#" class="linkCardHebergement">
+								<div class="imgHeb" id="imgHeb6"></div>
+								<h2 class="cardHebergementsTitle">Hôtel chez Amina </h2>
+								<p class="prixNuitHeb">Nuit à partir de 96 &euro;</p>
+								<div class="etoileHeb">
+									<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i>
+								</div>
+							</a>
+						</article>
+					</div>
+					<p class="afficher-plus"><a href="#" id="affichePlus">Afficher plus</a></p>
+				</section> <!-- FIN SECTION CARTES HEBERGEMENTS -->
+				<aside class="sectionAside"> <!-- Section cartes populaires (aside) -->
+					<div class="titleAsideZone">  <!-- Zone titre de la zone aside -->
+						<h2 class="titleAside">Les plus populaires</h2>
+						<i class="fa-solid fa-star" id="starTitleAside"></i>
+					</div>
+					<div class="cardsZoneAside"> <!-- Zone cartes -->
+						<article class="cardPopulaire"> <!--CARTE -->
+							<a href="#" class="linkCardPop">
+								<div class="imgPop" id="imgPop1"></div>
+								<div class="descriptionHeb">
+									<h2 class="titleCardPop">Hôtel Le soleil du matin</h2>
+									<p class="prixNuitPop">Nuit à partir 128 &euro;</p>
+									<div class="etoileAside">
+										<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i>
+									</div>
+								</div>
+							</a>
+						</article>	
+						<article class="cardPopulaire">
+							<a href="#" class="linkCardPop">
+								<div class="imgPop" id="imgPop2"></div>
+								<div class="descriptionHeb">
+									<h2 class="titleCardPop">Au coeur de l'eau Chambres d'hôtes</h2>
+									<p class="prixNuitPop">Nuit à partir de 71 &euro;</p>
+									<div class="etoileAside">
+										<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i>
+									</div>
+								</div>
+							</a>
+						</article>
+						<article class="cardPopulaire">
+							<a href="#" class="linkCardPop">
+								<div class="imgPop" id="imgPop3"></div>
+								<div class="descriptionHeb">
+									<h2 class="titleCardPop">Hôtel Tout bleu et Blanc</h2>
+									<p class="prixNuitPop">Nuit à partir de 68 &euro;</p>
+									<div class="etoileAside">
+										<i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star blue"></i><i class="fa-solid fa-star lightgray"></i>
+									</div>
+								</div>
+							</a>
+						</article>
+					</div>
+				</aside>  <!-- FIN SECTION CARTES HEBERGEMENTS POPULAIRES -->
+			</div>
+			<!-- FIN MIDDLE MAIN ZONE -->
+			<!--  ZONE CARTES ACTIVITES MARSEILLE (bottomMainZone)-->
+			<div class="bottomMainZone" id="bottomMainZone">
+				<h1 class="activiteslocalisation" >Activités à Marseille</h1>  <!--TITRE DE LA ZONE -->
+				<div class="activitesCardsZone"> <!-- ZONE DES CARTES -->
+						<article class="bigCardActivites">  <!-- GRANDES CARTES SEULE DANS SA ZONE -->
+							<a href="#" class="linkActivite">
+								<div class="bigCard" id="imgActivite1"></div>
+								<h2 class="titleActivite"><span class="locationActivite">Vieux port</span></h2>
+							</a>
+							</article> <!-- FIN GRANDE CARTE -->
+
+						<div class="smallCardZone"><!--  PETITES CARTES, 2 CARTES DANS LA MÊME ZONE EN COLONNE -->
+							<article class="smallCardActivites">
+								<a href="#" class="linkActivite">
+									<div class="smallCard" id="imgActivite2"></div>
+									<h2 class="titleActivite"><span class="locationActivite">Fort de Pomègues</span></h2>
+								</a> 
+							</article>
+							<article class="smallCardActivites">
+								<a href="#" class="linkActivite">
+									<div class="smallCard" id="imgActivite3"></div>
+									<h2 class="titleActivite"><span class="locationActivite">Îles de Frioul</span></h2>
+								</a>
+							</article>
+						</div> <!-- FIN DE LA ZONE PETITES CARTES -->
+						<article class="bigCardActivites">
+							<a href="#" class="linkActivite">
+								<div class="bigCard" id="imgActivite4"></div>
+								<h2 class="titleActivite"><span class="locationActivite">Parc National des Calanques</span></h2>
+							</a>	
+							</article>	
+						<div class="smallCardZone">
+							<article class="smallCardActivites">
+								<a href="#" class="linkActivite">
+									<div class="smallCard" id="imgActivite5"></div>
+									<h2 class="titleActivite"><span class="locationActivite">Notre-Dame-de-la-Garde</span></h2>
+								</a>
+							</article>
+							<article class="smallCardActivites">
+								<a href="#" class="linkActivite">
+									<div class="smallCard" id="imgActivite6"></div>
+									<h2 class="titleActivite"><span class="locationActivite">Parc Longchamp</span></h2>
+								</a>
+							</article>
+						</div>
+				
+				</div>
+			</div>
+		</main>
+		<!--FIN CONTENU PRINCIPALE-->
+		<!---FOOTER-->
+		<footer>
+			<div class="blocFooter" id="aPropos">
+				<h1 class="titleFooter">A propos</h1>
+
+				<a href="#" class="infoFooter">Fonctionnement du site</a>
+				<a href="#" class="infoFooter">Conditions générales de vente</a>
+				<a href="#" class="infoFooter">Données de confidentialité</a>
+			
+			</div>
+			<div class="blocFooter" id="nosHebergements">
+				<h1 class="titleFooter">Nos hébergements</h1>
+
+				<a href="#" class="infoFooter">Charte qualité</a> 
+				<a href="#" class="infoFooter">Soumettre votre hôtel</a>
+			</div>
+			<div class="blocFooter" id="assistance">
+				<h1 class="titleFooter">Assistance</h1>
+
+				<a href="#" class="infoFooter">Centre d'aide</a>
+				<a href="#" class="infoFooter">Nous contacter</a>
+			</div>	
+		</footer>
+	</body>
+</html>

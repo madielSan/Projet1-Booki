@@ -1,0 +1,166 @@
+.bottomMainZone
+{
+	display: flex;
+	flex-direction: column;
+	margin: 30px 0 50px 40px;
+}
+
+.activiteslocalisation
+{
+	font-size: 21px;
+	font-weight: 700;
+	margin:30px 0 25px;
+}
+
+
+.activitesCardsZone
+{
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+
+/*---------------------------------------------Big cards activities--------------------------------------------------------*/
+
+
+.bigCardActivites
+{
+	min-width: 22%;
+	min-height: 450px;
+	margin-right: 40px;
+	border-radius: 20px;
+	box-shadow: 6px 6px 12px #f2f2f2;
+	position: relative;
+
+}
+
+.bigCardActivites:hover
+{
+	box-shadow: 6px 6px 10px lightgray;
+}
+
+
+.titleActivite
+{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 55px;
+	background-color: #FFFFFF;
+	margin: auto;
+	border-radius: 0 0 20px 20px;
+	position: absolute;
+	bottom: 0;
+} 
+
+.locationActivite
+{
+	font-size: 16px;
+	font-weight: 700;
+	padding-left: 25px;
+}
+
+/*-------------------------------------------Small Card Activities------------------------------------------------*/
+
+
+
+.smallCardZone
+{
+	min-width: 22%;
+	min-height: 450px;
+	margin-right: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+}
+
+.smallCardActivites
+{
+	min-height: 200px;
+	border-radius: 20px;
+	box-shadow: 6px 6px 12px #f2f2f2;
+	position: relative;
+}
+
+.smallCardActivites:first-child
+{
+	margin-bottom: 40px;
+}
+
+.smallCardActivites:hover
+{
+	box-shadow: 6px 6px 10px lightgray;
+}
+
+
+
+.linkActivite
+{
+	color: #000000;
+	text-decoration: none;	
+}
+
+
+/* ------------------------------Images cartes activités ----------------------------------------------*/
+
+
+.bigCard
+{
+	height: 450px;
+	width: auto;
+	border-radius: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.smallCard
+{	
+	
+	height: 180px;
+	width: auto;
+	border-radius: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#imgActivite1
+{
+	background-image: url("../../images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgActivite2
+{
+	background-image: url("../../images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+	background-size: cover;
+
+}
+#imgActivite3
+{
+	background-image: url("../../images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+	background-size: cover;
+
+}
+
+#imgActivite4
+{
+	background-image: url("../../images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+	background-size: cover;
+	filter:brightness(125%) contrast(110%);
+
+}
+
+#imgActivite5
+{
+	background-image: url("../../images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgActivite6
+{
+	background-image: url("../../images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+	background-size: cover;
+
+}

@@ -1,0 +1,301 @@
+
+/*partieCentrale contient le bloc des sections hebergements et les plus populaires*/
+
+.middle-main-zone
+{
+	display: flex;
+	width: 95%;
+	margin: auto;	
+}
+
+/*--------------------------Section Hébergements, contient le titre et les cartes qui décrivent les suites proposées.-----------------*/
+
+.sectionHebergement
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: #f2f2f2;
+	border-radius: 20px;
+	padding:20px;
+	flex: 2.65;		
+}
+
+.titleHebergement
+{
+	font-size: 22px;
+	font-weight: 700;
+	margin-bottom: 30px;
+	padding-left: 23px;
+}
+
+
+.afficher-plus
+{
+	margin: 40px 0 25px;
+}
+
+#affichePlus
+{
+	padding-left: 23px;
+	font-size: 18px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 700;
+}
+
+#affichePlus:hover
+{
+	text-decoration: underline;
+}
+
+.cardsZone
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+/*Les cartes Hébergement contenant les données, images, lieu, prix, notes.*/
+.cardHebergements
+{
+	display: flex;
+	flex-flow: column;
+	min-width: 28.5%;
+	background-color: white;
+	padding: 5px;
+	border-radius:20px;
+	box-shadow: 4px 4px 10px lightgray;
+	position: relative;
+}
+
+#cardHebergement1, #cardHebergement2, #cardHebergement3
+{
+	margin-bottom: 30px;
+}
+
+.cardHebergements:hover
+{
+	box-shadow: 8px 8px 10px lightgray;
+}
+
+.linkCardHebergement
+{
+	color: #000000;
+	text-decoration: none;	
+}
+
+.cardHebergementsTitle
+{
+	font-size: 15px;
+	margin: 10px 10px 5px 10px;
+	white-space: nowrap;
+}
+
+.prixNuitHeb
+{
+	font-size: 12px;
+	margin: 0 10px 25px;
+}
+
+.etoileHeb
+{
+	position: absolute;
+	bottom: 5px;
+	margin-left:10px;
+}
+
+
+/* -----------------------------------Photos des Hébergements: Format Device -----------------------------------------------*/
+
+.imgHeb
+{
+	background-repeat: no-repeat; 
+	background-position: center;
+	height: 125px;
+	width: auto;
+	border-radius:20px 20px 0 0;
+}
+#imgHeb1
+{
+	background-image: url("../../images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgHeb2
+{
+	background-image: url("../../images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgHeb3
+{
+	background-image: url("../../images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgHeb4
+{
+	background-image: url("../../images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgHeb5
+{
+	background-image: url("../../images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
+	background-size: cover;
+}
+
+#imgHeb6
+{
+	background-image: url("../../images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
+	background-size: cover;
+}
+
+/*------------------------------------------------------------------------------------------*/
+
+/* Couleurs étoiles notes (Section Hébergement et Populaire) */
+
+.blue
+{
+	color:#0065FC
+}
+
+.lightgray
+{
+	color: lightgray;
+}
+
+/*---------------------aside contient le bloc "Les plus populaires" avec le titre et les cartes hébergements populaires-------------------------------------*/	
+
+.sectionAside
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:#f2f2f2;
+	border-radius: 15px;
+	padding: 20px 15px;
+	flex: 1.15;
+	margin-left: 40px;
+	position: relative;
+		
+}
+
+.titleAsideZone
+{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titleAside
+{
+	font-size: 22px;
+	font-weight: 700;
+	padding-left: 33px;
+}
+
+#starTitleAside
+{
+	margin-right: 25px;
+	font-size: 21px;
+}
+
+.cardsZoneAside
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 85%;
+}
+
+.cardPopulaire
+{
+	background-color: white;
+	padding: 5px;
+	border-radius:15px;
+	box-shadow: 4px 4px 10px lightgray;
+	margin: 15px;
+	width: 100%;
+	position: relative;
+		
+}
+
+.cardPopulaire:hover
+{
+	box-shadow: 8px 8px 10px lightgray;
+}
+
+
+.linkCardPop
+{
+	display: flex;
+	color: #000000;
+	text-decoration: none;
+}
+
+
+.titleCardPop
+{
+	padding-left: 5px;
+	font-size: 17px;
+	margin-bottom: 3px;
+}
+
+
+.prixNuitPop
+{
+
+	margin-top: 3px;
+	margin-bottom: 35px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+.fa-star
+{
+	font-size: 12px;
+}
+
+.etoileAside
+{
+	position: absolute;
+	bottom: 10px;
+}
+
+
+
+/*-------------------------Images des cartes d'hébergements populaires----------------------------*/
+
+.imgPop
+{
+	min-width: 120px;
+	min-height: 140px;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 15px 0 0 15px;
+	margin-right: 20px
+}
+
+#imgPop1
+{
+	background-image: url("../../images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+	background-size:cover;
+}
+
+#imgPop2
+{
+	background-image: url("../../images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg");
+	background-size: cover; 
+}
+
+#imgPop3
+{
+	background-image: url("../../images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg");	
+	background-size: 120px auto;
+}
+
+
